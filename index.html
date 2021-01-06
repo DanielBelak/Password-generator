@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="parameters">
+        <div class="characters">
+          <div class="option">
+            <input type="checkbox" name="lowercase" class="checkbox" />
+            <label for="lowercase">Lowercase</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" name="uppercase" class="checkbox" />
+            <label for="uppercase">Uppercase</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" name="numbers" class="checkbox" />
+            <label for="number">Numbers</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" name="symbols" class="checkbox" />
+            <label for="symbol">Symbols</label>
+          </div>
+        </div>
+        <div class="length">
+          <label for="length">Length</label>
+          <input
+            type="range"
+            name="length"
+            id="range"
+            min="5"
+            max="20"
+            value="8"
+          />
+          <input type="text" class="length-number" />
+        </div>
+      </div>
+      <button class="btn gen-btn">Generate new password</button>
+
+      <div class="output">
+        <input type="text" class="password" />
+      </div>
+      <button class="btn copy-btn"><i class="far fa-copy"></i>Copy</button>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
